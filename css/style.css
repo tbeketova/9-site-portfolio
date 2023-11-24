@@ -427,6 +427,26 @@ a:hover .gallery__img {
   margin-right: 30px;
   padding: 17px 20px 18px 20px;
 }
+
+/*Подсказка*/
+.footer__name [mytitle] {
+  cursor: pointer;
+}
+
+.footer__name [mytitle]:after {
+  content: "";
+  transition: 0.3s;
+}
+
+.footer__name [mytitle]:hover:after {
+  width: 550px;
+  display: block;
+  content: attr(mytitle);
+  background-color: red;
+  z-index: 10;
+}
+/*------------*/
+
 .form__email {
   padding: 17px 20px 18px 20px;
 }
@@ -496,6 +516,7 @@ a:hover .gallery__img {
     margin-right: 0;
   }
 }
+
 
 /*max-width: 992px*/
 @media screen and (max-width: 992px) {
