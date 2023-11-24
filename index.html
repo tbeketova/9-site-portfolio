@@ -63,8 +63,8 @@
 
     <section class="statistics">
       <div class="container">
-        <h2 class="vremenno">Статистика</h2>
-        <!-- <ul class="statistics__grid statistic__list">
+        <h2 class="visually-hidden">Статистика</h2>
+        <ul class="statistics__grid statistic__list">
           <li class="statistics__item">
             <p class="statistics__number">40+</p>
             <p class="statistics__text">проектов</p>
@@ -89,7 +89,7 @@
             <p class="statistics__number">40+</p>
             <p class="statistics__text">проектов</p>
           </li>
-        </ul> -->
+        </ul>
       </div>
     </section>
 
@@ -134,56 +134,63 @@
 
     <section class="gallery">
       <h2 class="visually-hidden">Gallery</h2>
-      <div class="gallery__grid">
-        <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
-        <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
-        <a href=""><img class="gallery__img" src="img/gallery2.png" alt="Gallery1" width="470" height="470"></a>
+      <div class="gallery__wrapper">
         <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
         <a href=""><img class="gallery__img" src="img/gallery2.png" alt="Gallery1" width="470" height="470"></a>
         <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
         <a href=""><img class="gallery__img" src="img/gallery2.png" alt="Gallery1" width="470" height="470"></a>
+        <a href=""><img class="gallery__img" src="img/gallery2.png" alt="Gallery1" width="470" height="470"></a>
+        <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
+        <a href=""><img class="gallery__img" src="img/gallery2.png" alt="Gallery1" width="470" height="470"></a>
+        <a href=""><img class="gallery__img" src="img/gallery1.png" alt="Gallery1" width="470" height="470"></a>
       </div>
-    </section> 
+    </section>
       
-      <section class="company">
-        <h2 class="visually-hidden">Логотип компании</h2>
-        <div class="container">
-          <div class="company__flex">
-            <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
-            <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
-            <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
-            <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
-          </div>
+    <section class="company">
+      <h2 class="visually-hidden">Логотип компании</h2>
+      <div class="container">
+        <div class="company__flex">
+          <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
+          <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
+          <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
+          <img class="company__img" src="img/company.png" alt="Logo company" width="255" height="120">
         </div>
+      </div>
     </section>
 
     <section class="form">
       <div class="container">
-        <h2 class="form__title text-h2">Хотите веб-сайт?</h2>
-        <p class="form__description">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-        <form action="get">
-          <div class="form__grid">
-            <input type="text" placeholder="Ваше имя">
-            <input type="text" placeholder="Ваш e-mail">
-            <textarea rows="6" cols="30" placeholder="Сообщение"></textarea>
-          </div>
-          <button class="form__button button">ОТПРАВИТЬ</button>
-        </form>
-      </div>
+        <div class="form__wrapper">
+          <h2 class="form__title text-h2">Хотите веб-сайт?</h2>
+          <p class="form__description text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+          <form action="" method="get">
+            <div class="form__inner">
+              <input class="form__name" type="text" placeholder="Ваше имя">
+              <input class="form__email" type="email" placeholder="Ваш e-mail">
+              <textarea class="form__message"  placeholder="Сообщение"></textarea>
+            </div><!-- rows="8" cols="30" -->
+            <button class="form__button button" type="submit">ОТПРАВИТЬ</button>
+          </form>
+        </div>
+      </div>  
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <h2 class="visually-hidden">Footer</h2>
-    <div class="footer__flex">
-      <h3 class="footer__name">Иванов Иван I</h3>
-      <p class="footer__copyright">(с) 2018. Все права защищены.</p>
-    </div>
-    <div class="footer__social">
-      <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
-      <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
-      <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
+    <div class="container">
+      <h2 class="visually-hidden">Footer</h2>
+      <div class="footer__wrapper">
+        <div class="footer__text">
+          <h3 class="footer__name">Иванов Иван I</h3>
+          <p class="footer__copyright">(с) 2018. Все права защищены.</p>
+        </div>
+        <div class="footer__social">
+          <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
+          <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
+          <a class="footer__social-vk" href=""><img  src="img/vkontakte.svg" alt="Logotip Vkontakte" width="44" height="40" ></a>
+        </div>
+      </div>  
     </div>
   </footer>
   
