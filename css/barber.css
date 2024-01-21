@@ -1,0 +1,32 @@
+
+
+
+@media (max-width: 768px) {
+  .page-header {
+  background-color: #8956; 
+  display: flex;
+  }
+
+  .page-main {
+    border: 2px solid rgb(0, 255, 72);
+  }
+
+  
+}
+
+@media (max-width: 320px) {
+  .page-header {
+    background-color: #eb9898;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-header__logo {
+    height: 85px;
+  }
+
+  .page-main {
+    border: 2px solid blue;
+  }
+}
+

@@ -102,7 +102,6 @@ ul {
   font-size: 16px;
 }
 
-/*----------*/
 /*Header*/
 .page-header {
   background-color: var(--background-light);
@@ -125,7 +124,6 @@ ul {
 }
 
 /*Menu*/
-
 .main-nav__flex {
   justify-content: end;
   display: flex;
@@ -169,7 +167,7 @@ ul {
 .slider__image {
   padding-top: 35px;
   padding-left: 5px;
-  width: 328px;
+  max-width: 328px;
   height: 225px;
   margin-right: 143px;
 }
@@ -199,6 +197,7 @@ ul {
 .video__box {
   margin: 0 auto;
   max-width: 540px;
+  width: 100%;
 }
 
 .about__title {
@@ -253,18 +252,17 @@ ul {
   margin-bottom: 100px;
 }
 
-.skills__flex {
+.skills__wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .skills__range {
-  max-width: 445px;
-  margin-right: 15px;
+  width: 445px;
+  margin-right: 105px;
 }
+
 .skills__title {
   text-align: left;
-  /* padding-top: 100px; */
   margin-bottom: 43px;
 }
 
@@ -273,20 +271,14 @@ ul {
 }
 
 .range__item-line {
-  width: 445px;
+  width: 100%;
   height: 4px;
   background-color: var(--color-range-light);
   border: none;
   margin-bottom: 30px;
 }
 
-.range__img {
-  width: 550px;
-  height: 450px;
-}
-
 /*Video*/
-
 .video {
   background-color: var(--background-light);
   margin-bottom: 28px;
@@ -346,8 +338,6 @@ ul {
 
 a:hover .gallery__img {
   opacity: 0.4;
-  /* width: 100%;
-  height: 100%; */
 }
 
 .gallery__wrapper a:hover  {
@@ -521,8 +511,6 @@ a:hover .gallery__img {
 /*max-width: 992px*/
 @media screen and (max-width: 992px) {
   .header__grid {
-    /* display: grid;
-    grid-template-columns: 96px 1fr;*/
     justify-content: stretch;
     align-items: center;
     padding-top: 57px;
@@ -585,8 +573,4 @@ a:hover .gallery__img {
   .slider__flex {
     justify-content: center;
   }
-}
-
-@media screen and (max-width: 576px) {
-
 }
